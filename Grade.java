@@ -22,7 +22,7 @@ class Grade
         System.out.print("Grade:");
         if(average>90)
           System.out.println("A");
-        else if(average>80 && average<=80)
+        else if(average>80 && average<=90)
             System.out.println("B");
         else if(average>60 && average<=80)
             System.out.println("C");
