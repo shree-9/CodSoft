@@ -1,34 +1,34 @@
 import java.util.*;
 class Grade
 {
-    double m1,m2,m3,m4,m5,t,avg;
-    Grade(double m1,double m2,double m3,double m4,double m5)
+    double marks1,marks2,marks3,marks4,marks5,t,average;
+    Grade(double marks1,double marks2,double marks3,double marks4,double marks5)
     {
-        this.m1=m1;
-        this.m2=m2;
-        this.m3=m3;
-        this.m4=m4;
-        this.m5=m5;
-        t=m1+m2+m3+m4+m5;
-        avg=t/5.0;
+        this.marks1=marks1;
+        this.marks2=marks2;
+        this.marks3=marks3;
+        this.marks4=marks4;
+        this.marks5=marks5;
+        t=marks1+marks2+marks3+marks4+marks5;
+        average=t/5.0;
     }
     void calcTotal()
     {
         System.out.println("Total="+t);
-        System.out.println("Average="+avg);
+        System.out.println("Average="+average);
     }
     void getGrade()
     {
         System.out.print("Grade:");
-        if(avg>90)
+        if(average>90)
           System.out.println("A");
-        else if(avg>80 && avg<=80)
+        else if(average>80 && average<=80)
             System.out.println("B");
-        else if(avg>60 && avg<=80)
+        else if(average>60 && average<=80)
             System.out.println("C");
-        else if(avg>35 && avg<=60)
+        else if(average>35 && average<=60)
             System.out.println("D");
-        else if(avg<=35)
+        else if(average<=35)
             System.out.println("E");
     }
     public static void main(String[] args){
